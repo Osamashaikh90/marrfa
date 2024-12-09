@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useSelector, useDispatch } from 'react-redux';
 import { categories } from '../utils/blogData';
-import { setCurrentPage } from '../utils/redux/blogSlice';
-import { setSelectedCategory, setSortBy } from '../utils/redux/blogSlice';
+import { setCurrentPage, setSelectedCategory, setSortBy } from '../utils/redux/blogSlice';
 import Blog from './Blog';
 
 const BlogList = ({blogs}) => {
   const dispatch = useDispatch();
-  const { currentPage, blogsPerPage , selectedCategory,  sortBy} = useSelector(state => state.blog);
+  const { currentPage, blogsPerPage, selectedCategory, sortBy } = useSelector(state => state.blog);
 
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
@@ -21,27 +20,34 @@ const BlogList = ({blogs}) => {
   };
 
   return (
-    <div className="px-4 py-12 mx-auto max-w-7xl">
-      <div className="flex flex-col items-center justify-between mb-8 md:flex-row">
-        <div className="flex gap-4 mb-4 overflow-x-auto md:mb-0">
-          {categories.map(category => (
-            <button
-              key={category}
-              onClick={() => dispatch(setSelectedCategory(category))}
-              className={`px-4 py-2 cursor-pointer rounded-full ${
-                selectedCategory === category
-                  ? 'bg-[#10a4b0] text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
-            >
-              {category}
-            </button>
-          ))}
+    <div className="px-4 py-6 mx-auto md:py-8 lg:py-12 max-w-7xl">
+      {/* Filters Section */}
+      <div className="flex flex-col gap-4 mb-6 lg:flex-row md:mb-8">
+        {/* Categories */}
+        <div className="w-full pb-2 overflow-x-auto hide-scrollbar">
+          <div className="flex gap-2 md:gap-4 min-w-max">
+            {categories.map(category => (
+              <button
+                key={category}
+                onClick={() => dispatch(setSelectedCategory(category))}
+                className={`px-3 py-1.5 md:px-4 md:py-2 text-sm md:text-base rounded-full whitespace-nowrap
+                  ${selectedCategory === category
+                    ? 'bg-[#10a4b0] text-white'
+                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
+
+        {/* Sort Dropdown */}
         <select
           value={sortBy}
           onChange={(e) => dispatch(setSortBy(e.target.value))}
-          className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#10a4b0]"
+          className="w-full md:w-auto px-4 py-2 lg:py-1 text-sm md:text-base border border-gray-300 rounded-lg 
+            focus:outline-none focus:ring-2 focus:ring-[#10a4b0]"
         >
           <option value="latest">Latest First</option>
           <option value="oldest">Oldest First</option>
@@ -49,7 +55,8 @@ const BlogList = ({blogs}) => {
         </select>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {/* Blog Grid */}
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8">
         {currentBlogs.map(blog => (
           <Blog key={blog.id} blog={blog} />
         ))}
@@ -57,41 +64,46 @@ const BlogList = ({blogs}) => {
 
       {/* Pagination */}
       {totalPages > 1 && (
-        <div className="flex justify-center mt-8 space-x-2">
+        <div className="flex flex-wrap justify-center gap-2 mt-6 md:mt-8">
+          {/* Previous Button */}
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className={`px-4 py-2 rounded-md ${
-              currentPage === 1
+            className={`px-2 py-1 md:px-4 md:py-2 text-sm md:text-base rounded-md
+              ${currentPage === 1
                 ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
                 : 'bg-[#10a4b0] text-white hover:bg-[#0d8a94]'
-            }`}
+              }`}
           >
-            Previous
+            Prev
           </button>
           
-          {pageNumbers.map((number) => (
-            <button
-              key={number}
-              onClick={() => handlePageChange(number)}
-              className={`px-4 py-2 rounded-md ${
-                currentPage === number
-                  ? 'bg-[#10a4b0] text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
-            >
-              {number}
-            </button>
-          ))}
+          {/* Page Numbers */}
+          <div className="flex flex-wrap gap-2">
+            {pageNumbers.map((number) => (
+              <button
+                key={number}
+                onClick={() => handlePageChange(number)}
+                className={`px-2 py-1 md:px-4 md:py-2 text-sm md:text-base rounded-md
+                  ${currentPage === number
+                    ? 'bg-[#10a4b0] text-white'
+                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  }`}
+              >
+                {number}
+              </button>
+            ))}
+          </div>
           
+          {/* Next Button */}
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 rounded-md ${
-              currentPage === totalPages
+            className={`px-2 py-1 md:px-4 md:py-2 text-sm md:text-base rounded-md
+              ${currentPage === totalPages
                 ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
                 : 'bg-[#10a4b0] text-white hover:bg-[#0d8a94]'
-            }`}
+              }`}
           >
             Next
           </button>
