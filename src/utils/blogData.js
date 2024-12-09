@@ -1,4 +1,3 @@
-import { AI, Web, JS, Net, Cloud, App, AIHEALTH , Blockchain, Typo, UI, StartUp, Security, sustainable, Remote, Quantumn, Mental, Mindful, DesignP, DEVOPS, DM, DP, DS, Ecommerce, Fitness, Funding,SusWeb, Wellness, Color } from "../assets/images";
 export const blogs = [
   {
     id: 1,
@@ -7,7 +6,7 @@ export const blogs = [
     minuteRead: 5,
     date: "2024-11-15",
     category: "Technology",
-    image: AI,
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
     author: "John Doe"
   },
   {
@@ -17,7 +16,7 @@ export const blogs = [
     minuteRead: 8,
     date: "2024-10-14",
     category: "Programming",
-    image: Web,
+    image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=800&q=80",
     author: "Jane Smith"
   },
   {
@@ -27,7 +26,7 @@ export const blogs = [
     minuteRead: 6,
     date: "2024-09-13",
     category: "Design",
-    image: UI,
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80",
     author: "Sarah Johnson"
   },
   {
@@ -37,7 +36,7 @@ export const blogs = [
     minuteRead: 10,
     date: "2024-08-12",
     category: "Business",
-    image: StartUp,
+    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80",
     author: "Mike Wilson"
   },
   {
@@ -47,7 +46,7 @@ export const blogs = [
     minuteRead: 7,
     date: "2024-07-11",
     category: "Health",
-    image: Wellness,
+    image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80",
     author: "Emma Davis"
   },
   {
@@ -57,7 +56,7 @@ export const blogs = [
     minuteRead: 9,
     date: "2024-07-10",
     category: "Technology",
-    image: Security,
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
     author: "Alex Chen"
   },
   {
@@ -67,7 +66,7 @@ export const blogs = [
     minuteRead: 12,
     date: "2024-06-09",
     category: "Programming",
-    image: App,
+    image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=800&q=80",
     author: "David Kim"
   },
   {
@@ -77,7 +76,7 @@ export const blogs = [
     minuteRead: 6,
     date: "2024-05-08",
     category: "Business",
-    image: Remote,
+    image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=800&q=80",
     author: "Lisa Brown"
   },
   {
@@ -87,7 +86,7 @@ export const blogs = [
     minuteRead: 8,
     date: "2024-04-07",
     category: "Technology",
-    image: sustainable,
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
     author: "Tom Green"
   },
   {
@@ -97,7 +96,7 @@ export const blogs = [
     minuteRead: 11,
     date: "2024-03-06",
     category: "Programming",
-    image: DS,
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=800&q=80",
     author: "Rachel Lee"
   },
   {
@@ -107,7 +106,7 @@ export const blogs = [
     minuteRead: 7,
     date: "2024-03-05",
     category: "Business",
-    image: DM,
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
     author: "Mark Thompson"
   },
   {
@@ -117,7 +116,7 @@ export const blogs = [
     minuteRead: 5,
     date: "2024-05-04",
     category: "Health",
-    image: Mindful,
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
     author: "Emily Wilson"
   },
   {
@@ -127,7 +126,7 @@ export const blogs = [
     minuteRead: 10,
     date: "2024-03-03",
     category: "Technology",
-    image: Cloud,
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     author: "Chris Anderson"
   },
   {
@@ -137,7 +136,7 @@ export const blogs = [
     minuteRead: 6,
     date: "2024-03-02",
     category: "Design",
-    image: Typo,
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
     author: "Nina Parker"
   },
   {
@@ -147,7 +146,7 @@ export const blogs = [
     minuteRead: 9,
     date: "2024-03-01",
     category: "Technology",
-    image: Blockchain,
+    image: "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=800&q=80",
     author: "Sam Roberts"
   },
   {
@@ -157,7 +156,7 @@ export const blogs = [
     minuteRead: 8,
     date: "2024-02-29",
     category: "Programming",
-    image: JS,
+    image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=800&q=80",
     author: "Kevin Zhang"
   },
   {
@@ -167,7 +166,7 @@ export const blogs = [
     minuteRead: 11,
     date: "2024-02-28",
     category: "Business",
-    image: StartUp,
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
     author: "Amanda Foster"
   },
   {
@@ -177,7 +176,7 @@ export const blogs = [
     minuteRead: 7,
     date: "2024-02-15",
     category: "Design",
-    image: DesignP,
+    image: "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=800&q=80",
     author: "Ryan Cooper"
   },
   {
@@ -187,7 +186,7 @@ export const blogs = [
     minuteRead: 6,
     date: "2024-02-08",
     category: "Health",
-    image: Mental,
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
     author: "Laura Martinez"
   },
   {
@@ -197,7 +196,7 @@ export const blogs = [
     minuteRead: 9,
     date: "2024-02-06",
     category: "Technology",
-    image: Blockchain,
+    image: "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=800&q=80",
     author: "Daniel Lee"
   },
   {
@@ -207,7 +206,7 @@ export const blogs = [
     minuteRead: 7,
     date: "2024-01-29",
     category: "Technology",
-    image: Net,
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     author: "James Wilson"
   },
   {
@@ -217,7 +216,7 @@ export const blogs = [
     minuteRead: 11,
     date: "2024-01-23",
     category: "Programming",
-    image: DEVOPS,
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     author: "Maria Garcia"
   },
   {
@@ -227,7 +226,7 @@ export const blogs = [
     minuteRead: 6,
     date: "2024-02-22",
     category: "Design",
-    image: Color,
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     author: "Sophie Chen"
   },
   {
@@ -237,7 +236,7 @@ export const blogs = [
     minuteRead: 9,
     date: "2024-02-21",
     category: "Business",
-    image: Ecommerce,
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     author: "Robert Taylor"
   },
   {
@@ -247,7 +246,7 @@ export const blogs = [
     minuteRead: 7,
     date: "2024-02-20",
     category: "Health",
-    image: Fitness,
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     author: "Jennifer Adams"
   },
   {
@@ -257,7 +256,7 @@ export const blogs = [
     minuteRead: 10,
     date: "2024-02-19",
     category: "Technology",
-    image: Quantumn,
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     author: "Michael Chang"
   },
   {
@@ -267,7 +266,7 @@ export const blogs = [
     minuteRead: 8,
     date: "2024-02-18",
     category: "Design",
-    image: SusWeb,
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     author: "Emma Watson"
   },
   {
@@ -277,7 +276,7 @@ export const blogs = [
     minuteRead: 12,
     date: "2024-02-17",
     category: "Health",
-    image: AIHEALTH,
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
     author: "Dr. Sarah Palmer"
   },
   {
@@ -287,7 +286,7 @@ export const blogs = [
     minuteRead: 9,
     date: "2024-02-16",
     category: "Technology",
-    image: DP,
+    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80",
     author: "Paul Anderson"
   },
   {
@@ -297,7 +296,7 @@ export const blogs = [
     minuteRead: 11,
     date: "2024-02-15",
     category: "Business",
-    image: Funding,
+    image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=800&q=80",
     author: "Mark Stevens"
   }
 ];
