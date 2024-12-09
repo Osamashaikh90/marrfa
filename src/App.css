@@ -1,0 +1,16 @@
+/*  */
+
+nav {
+  position: relative; /* Default to relative */
+  transition: all 0.3s ease; /* Smooth transition for sticky effect */
+  top: 0px;
+  z-index: 10; /* Ensure the navbar stays above other elements */
+}
+
+nav.sticky {
+  position: fixed; /* Change to fixed when scrolling */
+  background: #ffffff; /* Light background for sticky state */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for sticky effect */
+  color: #000; /* Change text color to black */
+  z-index: 50; /* Higher z-index for sticky state */
+}
